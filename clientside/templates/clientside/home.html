@@ -1,0 +1,48 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Home page</title>
+	<style>
+       body {
+       	background-image: url('https://s1.im.ge/2021/06/07/l3vy.jpg');
+       	background-repeat:no-repeat;
+       	background-attachment: fixed;
+       	background-size: 100% 100%;
+       }
+		body h1{
+			text-align: center;
+			width: 100%;
+			padding:10px 10px;
+			color:black;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box{
+			align-self: center;
+  text-align: center;
+  text-decoration: none;
+  border:none;
+  background: none;
+  font-size: 16px;
+ 
+
+		}
+
+
+	</style>
+
+</head>
+<body>
+<div class="box">
+	<h1>CHOSE THE IMAGE AND KNOW THE DISEASE </h1>
+    <form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+
+        {{ form.as_p }} 
+
+        <button type="submit">Upload</button> 
+    </form> 
+</div>
+</body>
+</html>
