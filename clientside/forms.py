@@ -5,4 +5,4 @@ class PlantDiseaseForm(forms.ModelForm):
   
     class Meta: 
         model = PlantDiseaseImage
-        fields = ['plantimage1','plantimage2','plantimage3']
+        fields = ['Image1','Image2','Image3']
